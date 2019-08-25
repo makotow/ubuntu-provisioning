@@ -1,0 +1,13 @@
+---
+- name: Dev tools Provisioner
+  hosts: all
+  gather_facts: yes
+  roles:
+    - common
+    - dev
+    - andrewrothstein.terraform
+    - andrewrothstein.kubectl
+    - andrewrothstein.kubernetes-helm
+    - geerlingguy.docker
+  post_tasks:
+    - shell: echo 'finish'

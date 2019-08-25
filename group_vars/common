@@ -1,0 +1,16 @@
+---
+common_packages:
+  - ssh
+  - wget  
+  - open-iscsi
+  - lsscsi
+  - sg3-utils
+  - multipath-tools
+  - scsitools
+  - nfs-common
+
+common_services:
+  - { name: ssh, state: started, enabled: true }
+  - { name: open-iscsi, state: started, enabled: true }
+  - { name: multipath-tools, state: started, enabled: true }
+  - { name: rpcbind, state: started, enabled: true }

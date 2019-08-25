@@ -1,0 +1,5 @@
+# from galaxy
+- src: andrewrothstein.kubectl
+- src: andrewrothstein.kubernetes-helm
+- src: andrewrothstein.terraform 
+- src: geerlingguy.docker

@@ -1,0 +1,25 @@
+- name: install packages 
+  become: true
+  apt:
+    pkg: "{{ dev_packages }}"
+    state: present
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: install snap packages 
+  become: true
+  snap:
+    name: "{{ dev_snap }}"
+    state: present
+    classic: yes
+
+# install binary from url
+# stern 
+- name: Download stern file with check (sha256)
+  become: true
+  get_url:
+    url: https://github.com/wercker/stern/releases/download/1.11.0/stern_linux_amd64
+    force: yes
+    dest: /usr/local/bin/stern
+    mode: 0755
+    checksum: sha256:e0b39dc26f3a0c7596b2408e4fb8da533352b76aaffdc18c7ad28c833c9eb7db

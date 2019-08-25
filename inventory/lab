@@ -1,0 +1,13 @@
+[all:children]
+dev
+common
+docker
+
+[dev]
+localhost
+
+[common]
+localhost
+
+[docker]
+localhost
