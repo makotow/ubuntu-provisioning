@@ -1,0 +1,16 @@
+---
+- name: Ubuntu configuration
+  hosts: all
+  pre_tasks:
+    - stat: path=~/.ssh
+      register: ssh
+    - name: git clone dotfiles
+      git:
+        repo: git@github.com:makotow/dotfiles.git
+        dest: ~/dotfiles
+        version: master
+  roles:
+    - dotfiles
+  post_tasks:
+    - shell: echo 'dotfiles setup done.'
+  tags: configuration

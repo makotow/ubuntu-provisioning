@@ -9,6 +9,3 @@ dev_packages:
 
 dev_snap:
   - code
-
-dev_binary:
-  - { name: "stern", url: "https://github.com/wercker/stern/releases/download/1.11.0/stern_linux_amd64", dest: "/usr/local/bin/stern", checksum: "e0b39dc26f3a0c7596b2408e4fb8da533352b76aaffdc18c7ad28c833c9eb7db"}

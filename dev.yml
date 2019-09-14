@@ -8,6 +8,8 @@
     - andrewrothstein.terraform
     - andrewrothstein.kubectl
     - andrewrothstein.kubernetes-helm
-    - geerlingguy.docker
+    - name: geerlingguy.docker
+      become: yes
   post_tasks:
-    - shell: echo 'finish'
+    - shell: echo 'Development tools are installing finish.'
+  tags: configuration  
