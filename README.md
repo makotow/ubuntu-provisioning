@@ -1,4 +1,4 @@
-# Docker Volume Plugin provisioning with Ansible
+# Ubuntu provisioning with Ansible
 
 ## What is this
 
@@ -39,6 +39,7 @@ apt
 - curl
 - jq
 - ssh
+- etc.
 
 ### KVM hypervisor
 
