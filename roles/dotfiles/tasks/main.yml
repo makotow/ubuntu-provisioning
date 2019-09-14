@@ -76,8 +76,8 @@
 
 - name: create symlink doom emacs
   file:
-    src: ~/dotfiles/doom/
-    dest: ~/.config/doom/
+    src: ~/dotfiles/doom
+    dest: ~/.config/doom
     state: link
 
 - name: create symlink .peco
