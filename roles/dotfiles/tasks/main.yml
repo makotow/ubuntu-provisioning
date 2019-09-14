@@ -50,12 +50,12 @@
   become: true
   when: grep_shells.rc != 0
 
-- name: change login shell
-  shell: >
-    chsh -s {{which_zsh.stdout}}
-  register: result
-  until: result.rc == 0
-  retries: 3
+# - name: change login shell
+#   shell: >
+#     chsh -s {{which_zsh.stdout}}
+#   register: result
+#   until: result.rc == 0
+#   retries: 3
 
 - name: check .zsh directory existing
   stat: 
