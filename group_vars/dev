@@ -6,6 +6,8 @@ dev_packages:
   - tig
   - jq
   - chromium-browser
+  - vim
+  - zsh
 
 dev_snap:
   - code
