@@ -8,6 +8,7 @@ common_packages:
   - multipath-tools
   - scsitools
   - nfs-common
+  - imwheel
 
 common_services:
   - { name: ssh, state: started, enabled: true }
