@@ -8,6 +8,7 @@ dev_packages:
   - chromium-browser
   - vim
   - zsh
+  - curl
 
 dev_snap:
   - code
