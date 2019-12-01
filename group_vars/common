@@ -9,7 +9,9 @@ common_packages:
   - scsitools
   - nfs-common
   - imwheel
-
+  - fonts-powerline
+  - fonts-firacode
+  
 common_services:
   - { name: ssh, state: started, enabled: true }
   - { name: open-iscsi, state: started, enabled: true }
