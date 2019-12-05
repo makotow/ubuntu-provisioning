@@ -11,7 +11,8 @@ common_packages:
   - imwheel
   - fonts-powerline
   - fonts-firacode
-  
+  - direnv
+
 common_services:
   - { name: ssh, state: started, enabled: true }
   - { name: open-iscsi, state: started, enabled: true }
